@@ -41,9 +41,12 @@ body{
  }
 
  @media screen and (max-width:380px){
-
+      body{
+       margin:0;
+       padding:0;
+       }
      .container{
-       Width:374px;
+      min-width:374px;
      }
      .main-image img{
 
