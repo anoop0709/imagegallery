@@ -42,6 +42,9 @@ body{
 
  @media screen and (max-width:380px){
 
+     .container{
+       Width:100%;
+     }
      .main-image img{
 
          width: 100%;
