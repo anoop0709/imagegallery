@@ -1,14 +1,13 @@
 body{
-    margin:0;
+    margin:0 ;
     padding: 0;
     background-color: rgb(34, 51, 49);
 }
 .container{
     width:80%;
     background: rgb(248, 248, 248);
-    margin: 0 auto;
     border:3px solid rgb(248, 248, 248);
-
+    margin: 0 auto;
 
 }
  .main-image img {
@@ -40,23 +39,26 @@ body{
      animation: fadeIn 0.5s ease-in 1 forwards;
  }
 
- @media screen and (max-width:380px){
+ @media screen and (max-width:395px){
       body{
        margin:0;
        padding:0;
        }
      .container{
-      width:374px;
+      min-width:374px;
+      margin: 0px;
+      padding: 0px;
+
      }
      .main-image img{
 
          width: 100%;
-         height: 70px;
+         height: 400px;
          object-fit: cover;
         }
       .image-gallery img{
           width: 100%;
-          height: 30px;
+          height: 130px;
           object-fit: cover;
       }  
 

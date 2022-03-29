@@ -15,30 +15,18 @@ images.forEach(img => img.addEventListener('click',imgClick));
 function imgClick(e){
    
 
-    //reset the opacity
-
+//reset the opacity
     images.forEach(img => (img.style.opacity =1));
 
-    //change the source of the image from current to target
-
+//change the source of the image from current to target
     currentImage.src = e.target.src;
 
-    //add class fadein to the current-image div
+//add class fadein to the current-image div
+   currentImage.classList.add('fade-in');
 
-    currentImage.classList.add('fade-in');
+//set timeout to remove the class fadein from the current-image div
+   setTimeout(() => currentImage.classList.remove('fade-in'), 500);
 
-    //set timeout to remove the class fadein from the current-image div
-
-    setTimeout(() => currentImage.classList.remove('fade-in')
-        
-    , 500);
-
-
-
-    //opacity change to the clicked image
-
-    e.target.style.opacity = opacity;
-
-
-
+//opacity change to the clicked image
+   e.target.style.opacity = opacity;
 }
